@@ -11,8 +11,8 @@ import { UsersModule } from './users/users.module';
     UsersModule,
     TypeOrmModule.forRoot(),
     ServeStaticModule.forRoot({
-      rootPath:join(__dirname,"..",'avatars')
-    })
+      rootPath: join(__dirname, '..', 'avatars'),
+    }),
   ],
   controllers: [AppController],
   providers: [AppService],
