@@ -1,8 +1,9 @@
 import { Body, Controller,Delete,Get, HttpStatus, Param, Patch, Post, Put, UploadedFile, UseInterceptors } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { customName } from 'src/custoName';
+import { customName } from 'src/utils/custoName';
 import { UsersService } from './users.service';
 import { UserEntity } from './users/user.entity';
+import { diskStorage } from 'multer';
 
 @Controller('users')
 export class UsersController {

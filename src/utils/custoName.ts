@@ -8,6 +8,6 @@ export const customName=(req,file,callback)=>{
     const randomName = Array(16)
     .fill(null)
     .map(()=>Math.round(Math.random()*16).toString(16))
-    .join("");
-    callback(null,name+randomName+fileExtName);
+    .join('');
+    callback(null,`${name}-${randomName}${fileExtName}`);
 }
